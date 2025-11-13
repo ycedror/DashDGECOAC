@@ -1,0 +1,582 @@
+[
+    {
+        "ID Contrato":"CNH-A1-TRION\/2016",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-A3.CÁRDENAS-MORA\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-A4.OGARRIO\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M1-EK-BALAM\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M2-SANTUARIO-EL GOLPE\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M3-MISIÓN\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M3-MISIÓN\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M3-MISIÓN\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M4-ÉBANO\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M4-ÉBANO\/2018",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M4-ÉBANO\/2018",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M5-MIQUETLA\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-M5-MIQUETLA\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L01-A7\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L02-A1\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L02-A2\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L02-A4\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A1\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A10\/2016",
+        "Plan o programa":"PrTr",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A12\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A13\/2015",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A17\/2016",
+        "Plan o programa":"PrTr",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A18\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A2\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A20\/2016",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A21\/2016",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A23\/2015",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A24\/2016",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A3\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A5\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A6\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A7\/2015",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L03-A9\/2015",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L04-A4.CS\/2016",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R01-L04-A4.CS\/2016",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A10.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A10.CS\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A12.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A12.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A12.CS\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A15.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A2.TM\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A7.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A7.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A7.CS\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A8.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A8.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A9.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A9.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L01-A9.CS\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A1.BG\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A1.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A10.CS\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A10.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A10.CS\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A10.CS\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A4.BG\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A4.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A4.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A4.BG\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A4.BG\/2017",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A5.BG\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A5.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A5.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A5.BG\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A7.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A7.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A7.BG\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A7.BG\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A7.BG\/2017",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A8.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A8.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A9.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L02-A9.BG\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-01\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-01\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-02\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-02\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-03\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-03\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-BG-04\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-01\/2017",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-04\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-04\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-04\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-04\/2017",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-05\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-05\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-06\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-CS-06\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-TM-01\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-TM-01\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-TM-01\/2017",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-01\/2018",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-01\/2018",
+        "Plan o programa":"PrTr",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-01\/2018",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-02\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-02\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-03\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L03-VC-03\/2017",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-CM-G09\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-CS-G05\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-CS-G10\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-CS-G10\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-CS-G10\/2018",
+        "Plan o programa":"PrTr",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R02-L04-AP-PG05\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-06\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-13\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-13\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-13\/2018",
+        "Plan o programa":"PrEv",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-14\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-14\/2018",
+        "Plan o programa":"PrEv",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-15\/2018",
+        "Plan o programa":"PDE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-15\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"No Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-AS-CS-15\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    },
+    {
+        "ID Contrato":"CNH-R03-L01-G-TMV-04\/2018",
+        "Plan o programa":"PE",
+        "Vigencia":"Vigente"
+    }
+]
