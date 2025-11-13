@@ -9,6 +9,7 @@
     --color-activo: #cceeff;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -123,4 +124,5 @@ body {
     padding: 20px;
     color: #777;
     font-style: italic;
+
 }
