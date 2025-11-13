@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 async function cargarDatos() {
     try {
-        const response = await fetch('integral.json');
+        const response = await fetch('https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.js');
         if (!response.ok) {
             throw new Error(`Error al cargar integral.json: ${response.statusText}`);
         }
@@ -119,4 +119,5 @@ function renderizarSeccion(titulo, datos) {
             ${contenido}
         </div>
     `;
+
 }
