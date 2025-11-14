@@ -3,7 +3,7 @@
 
 // URL pública del archivo integral.json en Azure Blob Storage
 // REEMPLAZA ESTA LÍNEA CON TU URL REAL:
-const URL_INTEGRAL_JSON = "https://TU_URL_DE_AZURE_BLOB/integral.json";
+const URL_INTEGRAL_JSON = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.json";
 
 // Variable global para almacenar todos nuestros datos
 let datosIntegrales = {};
@@ -122,3 +122,4 @@ function renderizarSeccion(titulo, datos) {
         </div>
     `;
 }
+
