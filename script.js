@@ -1,76 +1,82 @@
 // --- script.js ---
 
+// Archivo en Azure Blob Storage
+// CAMBIA SOLO ESTA LÍNEA si subes una nueva versión o cambias el contenedor
+const URL_INTEGRAL = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.json";
+
 // Variable global para almacenar todos nuestros datos
 let datosIntegrales = {};
 
-// 1. Iniciar todo cuando el DOM esté cargado
+// Iniciar el sistema cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     cargarDatos();
 });
 
 /**
- * Carga el archivo integral.json
+ * Carga el archivo integral.json desde Azure Blob
  */
 async function cargarDatos() {
     try {
-        const response = await fetch('https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.js');
+        const response = await fetch(URL_INTEGRAL, {
+            cache: "no-store"   // evita versiones guardadas en caché
+        });
+
         if (!response.ok) {
             throw new Error(`Error al cargar integral.json: ${response.statusText}`);
         }
+
         datosIntegrales = await response.json();
-        
-        console.log("Datos cargados:", datosIntegrales);
-        
-        // Una vez cargados los datos, llenamos la lista de contratos
+
+        console.log("Datos cargados correctamente:", datosIntegrales);
+
+        // Llenamos la lista (parte izquierda)
         popularListaContratos(datosIntegrales.contratos);
 
     } catch (error) {
-        console.error(error);
-        document.getElementById('lista-contratos').innerHTML = `<h2 class="titulo-lista" style="background-color: red;">Error al cargar datos</h2>`;
-        document.getElementById('detalle-contrato').innerHTML = `<p>No se pudo cargar el archivo integral.json. Revisa la consola (F12) para más detalles.</p>`;
+        console.error("No se pudo cargar integral.json:", error);
+
+        document.getElementById('lista-contratos').innerHTML =
+            `<h2 class="titulo-lista" style="background-color:red;color:white;">Error al cargar datos</h2>`;
+
+        document.getElementById('detalle-contrato').innerHTML =
+            `<p>No se pudo cargar el archivo integral.json. Revisa la consola (F12) para más detalles.</p>`;
     }
 }
 
 /**
- * Llena la columna izquierda (Maestro) con la lista de contratos
+ * Llena la columna izquierda con la lista de contratos
  */
 function popularListaContratos(contratos) {
     const listaNav = document.getElementById('lista-contratos');
-    
-    // Obtenemos todos los IDs de los contratos
-    const idsContratos = Object.keys(contratos);
-    
-    listaNav.innerHTML = ''; // Limpiamos el "Cargando..."
-    listaNav.innerHTML += `<h2 class="titulo-lista">Contratos (${idsContratos.length})</h2>`;
 
-    const listaUl = document.createElement('ul');
-    
+    const idsContratos = Object.keys(contratos);
+
+    listaNav.innerHTML = `<h2 class="titulo-lista">Contratos (${idsContratos.length})</h2>`;
+
+    const ul = document.createElement('ul');
+
     idsContratos.forEach(id => {
         const li = document.createElement('li');
         li.textContent = id;
-        li.dataset.id = id; // Guardamos el ID para identificar el clic
-        
-        // AÑADIMOS EL EVENTO DE CLIC
+        li.dataset.id = id;
+
         li.addEventListener('click', () => {
-            // Limpiamos la clase 'activo' de cualquier otro elemento
-            document.querySelectorAll('#lista-contratos li.activo').forEach(item => {
-                item.classList.remove('activo');
-            });
-            // Añadimos la clase 'activo' al que clicamos
+            document.querySelectorAll('#lista-contratos li.activo')
+                .forEach(e => e.classList.remove('activo'));
+
             li.classList.add('activo');
-            
-            // Mostramos los detalles de ESE contrato
+
             mostrarDetalleContrato(id);
         });
-        
-        listaUl.appendChild(li);
+
+        ul.appendChild(li);
     });
 
-    listaNav.appendChild(listaUl);
+    listaNav.appendChild(ul);
 }
 
 /**
- * Muestra la información del contrato seleccionado en la columna derecha (Detalle)
+ * Muestra la información del contrato seleccionado
  */
 function mostrarDetalleContrato(id) {
     const detalleMain = document.getElementById('detalle-contrato');
@@ -81,37 +87,29 @@ function mostrarDetalleContrato(id) {
         return;
     }
 
-    // Construimos el HTML para el panel de detalle
-    // Aquí usamos la función renderizarSeccion para cada bloque de datos
-    let htmlDetalle = `<h2>${id}</h2>`;
-    
-    htmlDetalle += renderizarSeccion("1. Detalles del Contrato", contrato.detalles);
-    htmlDetalle += renderizarSeccion("2. Planes", contrato.planes);
-    htmlDetalle += renderizarSeccion("3. Periodos", contrato.periodos);
-    htmlDetalle += renderizarSeccion("4. Garantía y PMT", contrato.garantia_pmt);
-    htmlDetalle += renderizarSeccion("5. Trámites de Terminación (PTA)", contrato.pta);
-    htmlDetalle += renderizarSeccion("6. Contraprestaciones", contrato.contraprestaciones);
+    let html = `<h2>${id}</h2>`;
 
-    detalleMain.innerHTML = htmlDetalle;
+    html += renderizarSeccion("1. Detalles del Contrato", contrato.detalles);
+    html += renderizarSeccion("2. Planes", contrato.planes);
+    html += renderizarSeccion("3. Periodos", contrato.periodos);
+    html += renderizarSeccion("4. Garantía y PMT", contrato.garantia_pmt);
+    html += renderizarSeccion("5. Trámites de Terminación (PTA)", contrato.pta);
+    html += renderizarSeccion("6. Contraprestaciones", contrato.contraprestaciones);
+
+    detalleMain.innerHTML = html;
 }
 
 /**
- * Función Ayudante (Helper) para crear cada "caja" de sección.
- * Muestra los datos en formato JSON (<pre>) para mantener la discretización.
+ * Renderiza cualquier bloque del panel derecho
  */
 function renderizarSeccion(titulo, datos) {
-    let contenido = '';
-    
-    // Verificamos si hay datos
-    const hayDatos = (datos && (Array.isArray(datos) ? datos.length > 0 : Object.keys(datos).length > 0));
+    const hayDatos = datos && (
+        Array.isArray(datos) ? datos.length > 0 : Object.keys(datos).length > 0
+    );
 
-    if (hayDatos) {
-        // Convertimos el objeto/array a un string JSON formateado
-        const datosFormateados = JSON.stringify(datos, null, 2);
-        contenido = `<pre>${datosFormateados}</pre>`;
-    } else {
-        contenido = `<p class="no-datos">No hay datos disponibles para esta sección.</p>`;
-    }
+    const contenido = hayDatos
+        ? `<pre>${JSON.stringify(datos, null, 2)}</pre>`
+        : `<p class="no-datos">No hay datos disponibles para esta sección.</p>`;
 
     return `
         <div class="seccion">
@@ -119,5 +117,4 @@ function renderizarSeccion(titulo, datos) {
             ${contenido}
         </div>
     `;
-
 }
