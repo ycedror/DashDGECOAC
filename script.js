@@ -2,7 +2,7 @@
 
 // Archivo en Azure Blob Storage
 // CAMBIA SOLO ESTA LÍNEA si subes una nueva versión o cambias el contenedor
-const URL_INTEGRAL = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.json";
+const URL_INTEGRAL = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integrar.js";
 
 // Variable global para almacenar todos nuestros datos
 let datosIntegrales = {};
@@ -118,3 +118,4 @@ function renderizarSeccion(titulo, datos) {
         </div>
     `;
 }
+
