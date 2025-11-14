@@ -1,70 +1,64 @@
 // --- script.js ---
+// URL del archivo JSON integrado en Azure Blob Storage
+const URL_INTEGRAL = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integral.json";
 
-// Archivo en Azure Blob Storage
-// CAMBIA SOLO ESTA LÍNEA si subes una nueva versión o cambias el contenedor
-const URL_INTEGRAL = "https://jsonbd.blob.core.windows.net/dashboarddgecdoac/integrar.js";
-
-// Variable global para almacenar todos nuestros datos
+// Variable global con todos los datos
 let datosIntegrales = {};
 
-// Iniciar el sistema cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
+// Iniciar cuando cargue la página
+document.addEventListener("DOMContentLoaded", () => {
     cargarDatos();
 });
 
 /**
- * Carga el archivo integral.json desde Azure Blob
+ *  Cargar integral.json desde Azure
  */
 async function cargarDatos() {
     try {
-        const response = await fetch(URL_INTEGRAL, {
-            cache: "no-store"   // evita versiones guardadas en caché
-        });
+        const response = await fetch(URL_INTEGRAL, { cache: "no-store" });
 
         if (!response.ok) {
-            throw new Error(`Error al cargar integral.json: ${response.statusText}`);
+            throw new Error("No se pudo cargar el archivo integral.json");
         }
 
         datosIntegrales = await response.json();
 
-        console.log("Datos cargados correctamente:", datosIntegrales);
+        console.log("✔ Datos cargados:", datosIntegrales);
 
-        // Llenamos la lista (parte izquierda)
         popularListaContratos(datosIntegrales.contratos);
 
     } catch (error) {
-        console.error("No se pudo cargar integral.json:", error);
-
-        document.getElementById('lista-contratos').innerHTML =
-            `<h2 class="titulo-lista" style="background-color:red;color:white;">Error al cargar datos</h2>`;
-
-        document.getElementById('detalle-contrato').innerHTML =
-            `<p>No se pudo cargar el archivo integral.json. Revisa la consola (F12) para más detalles.</p>`;
+        console.error(error);
+        document.getElementById("lista-contratos").innerHTML =
+            `<h2 class="titulo-lista" style="background:red;color:white;">Error cargando datos</h2>`;
+        
+        document.getElementById("detalle-contrato").innerHTML =
+            `<p>No se pudo cargar integral.json. Revisa la consola (F12).</p>`;
     }
 }
 
 /**
- * Llena la columna izquierda con la lista de contratos
+ * Llena la lista izquierda con IDs de contratos
  */
 function popularListaContratos(contratos) {
-    const listaNav = document.getElementById('lista-contratos');
+    const contenedor = document.getElementById("lista-contratos");
+    const ids = Object.keys(contratos);
 
-    const idsContratos = Object.keys(contratos);
+    contenedor.innerHTML = `<h2 class="titulo-lista">Contratos (${ids.length})</h2>`;
 
-    listaNav.innerHTML = `<h2 class="titulo-lista">Contratos (${idsContratos.length})</h2>`;
+    const ul = document.createElement("ul");
 
-    const ul = document.createElement('ul');
-
-    idsContratos.forEach(id => {
-        const li = document.createElement('li');
+    ids.forEach(id => {
+        const li = document.createElement("li");
         li.textContent = id;
         li.dataset.id = id;
 
-        li.addEventListener('click', () => {
-            document.querySelectorAll('#lista-contratos li.activo')
-                .forEach(e => e.classList.remove('activo'));
+        li.addEventListener("click", () => {
 
-            li.classList.add('activo');
+            document.querySelectorAll("#lista-contratos li.activo")
+                .forEach(item => item.classList.remove("activo"));
+
+            li.classList.add("activo");
 
             mostrarDetalleContrato(id);
         });
@@ -72,18 +66,18 @@ function popularListaContratos(contratos) {
         ul.appendChild(li);
     });
 
-    listaNav.appendChild(ul);
+    contenedor.appendChild(ul);
 }
 
 /**
- * Muestra la información del contrato seleccionado
+ * Muestra panel derecho con la información del contrato
  */
 function mostrarDetalleContrato(id) {
-    const detalleMain = document.getElementById('detalle-contrato');
+    const contenedor = document.getElementById("detalle-contrato");
     const contrato = datosIntegrales.contratos[id];
 
     if (!contrato) {
-        detalleMain.innerHTML = `<p>Error: No se encontraron datos para el ID ${id}</p>`;
+        contenedor.innerHTML = `<p>Error: No existe el ID ${id}</p>`;
         return;
     }
 
@@ -96,20 +90,24 @@ function mostrarDetalleContrato(id) {
     html += renderizarSeccion("5. Trámites de Terminación (PTA)", contrato.pta);
     html += renderizarSeccion("6. Contraprestaciones", contrato.contraprestaciones);
 
-    detalleMain.innerHTML = html;
+    contenedor.innerHTML = html;
 }
 
 /**
- * Renderiza cualquier bloque del panel derecho
+ * Renderiza cajas del panel derecho
  */
 function renderizarSeccion(titulo, datos) {
-    const hayDatos = datos && (
-        Array.isArray(datos) ? datos.length > 0 : Object.keys(datos).length > 0
-    );
+    let contenido = "";
 
-    const contenido = hayDatos
-        ? `<pre>${JSON.stringify(datos, null, 2)}</pre>`
-        : `<p class="no-datos">No hay datos disponibles para esta sección.</p>`;
+    const tieneDatos =
+        datos &&
+        (Array.isArray(datos) ? datos.length > 0 : Object.keys(datos).length > 0);
+
+    if (tieneDatos) {
+        contenido = `<pre>${JSON.stringify(datos, null, 2)}</pre>`;
+    } else {
+        contenido = `<p class="no-datos">No hay datos disponibles para esta sección.</p>`;
+    }
 
     return `
         <div class="seccion">
@@ -118,4 +116,3 @@ function renderizarSeccion(titulo, datos) {
         </div>
     `;
 }
-
