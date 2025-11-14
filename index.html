@@ -2,28 +2,84 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Contratos</title>
+
+    <title>Dashboard de Contratos CNH</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #lista-contratos {
+            width: 25%;
+            background: #f3f3f3;
+            overflow-y: auto;
+            padding: 10px;
+            border-right: 2px solid #ccc;
+        }
+
+        #lista-contratos ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #lista-contratos li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        #lista-contratos li:hover {
+            background: #ddd;
+        }
+
+        #lista-contratos li.activo {
+            background: #3f51b5;
+            color: white;
+            font-weight: bold;
+        }
+
+        #detalle-contrato {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .seccion {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        .no-datos {
+            color: red;
+            font-style: italic;
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="dashboard-container">
-        
-        <nav id="lista-contratos">
-            <h2 class="titulo-lista">Cargando contratos...</h2>
-            </nav>
+    <nav id="lista-contratos">
+        <h2 class="titulo-lista">Cargando contratos...</h2>
+    </nav>
 
-        <main id="detalle-contrato">
-            <div class="placeholder">
-                <h2>Panel de Contratos y Asignaciones</h2>
-                <p>Por favor, selecciona un contrato de la lista de la izquierda para ver su información detallada.</p>
-            </div>
-        </main>
-
-    </div>
+    <main id="detalle-contrato">
+        <p>Selecciona un contrato para mostrar información.</p>
+    </main>
 
     <script src="script.js"></script>
 </body>
-
 </html>
